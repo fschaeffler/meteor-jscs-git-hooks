@@ -28,9 +28,9 @@ if (fileExists(prePushHook)) {
 }
 
 if (fileExists(preCommitHook + '.old')) {
-	fsExtra.copySync(path.resolve(__dirname, '../hooks/pre-commit.old'), preCommitHook);
+	fsExtra.copySync(path.resolve(gitDir, 'pre-commit.old'), preCommitHook);
 }
 
 if (fileExists(prePushHook + '.old')) {
-	fsExtra.copySync(path.resolve(__dirname, '../hooks/pre-push.old'), prePushHook);
+	fsExtra.copySync(path.resolve(gitDir, 'pre-push.old'), prePushHook);
 }

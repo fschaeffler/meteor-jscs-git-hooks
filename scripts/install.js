@@ -27,5 +27,5 @@ if (fileExists(prePushHook)) {
 	fs.renameSync(prePushHook, preCommitHook + '.old');
 }
 
-fsExtra.copySync(path.resolve(__dirname, 'hooks/pre-commit'), preCommitHook);
-fsExtra.copySync(path.resolve(__dirname, 'hooks/pre-push'), prePushHook);
+fsExtra.copySync(path.resolve(__dirname, '../hooks/pre-commit'), preCommitHook);
+fsExtra.copySync(path.resolve(__dirname, '../hooks/pre-push'), prePushHook);
