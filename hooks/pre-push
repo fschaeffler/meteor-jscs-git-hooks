@@ -2,4 +2,4 @@
 
 script_location="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
-$script_location/../../node_modules/meteor-jscs-git-hooks/bin/meteor-jscs-git-hooks 'pre-push'
+$script_location/../../node_modules/meteor-jscs-git-hooks/bin/meteor-jscs-git-hooks.sh 'pre-push'
