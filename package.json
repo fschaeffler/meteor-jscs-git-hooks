@@ -32,7 +32,7 @@
     "README.md"
   ],
   "scripts": {
-    "postinstall" : "scripts/install.js",
-    "uninstall" : "scripts/uninstall.js"
+    "postinstall" : "node scripts/install.js",
+    "uninstall" : "node scripts/uninstall.js"
   }
 }
