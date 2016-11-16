@@ -2,9 +2,9 @@ var fs = require('fs');
 var fsExtra = require('fs-extra');
 var path = require('path');
 
-var currentDir = process.cwd();
+var currentDir = process.argv[2];
 
-var gitDir = currentDir + '/../../.git/hooks';
+var gitDir = currentDir + '/.git/hooks';
 var preCommitHook = gitDir + '/pre-commit';
 var prePushHook = gitDir + '/pre-push';
 
