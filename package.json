@@ -1,7 +1,7 @@
 {
   "name": "meteor-jscs-git-hooks",
   "description": "Git hooks for checking code style and Meteor-based changes",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "dependencies": {
     "jscs": "latest",
     "fs-extra": "latest"
