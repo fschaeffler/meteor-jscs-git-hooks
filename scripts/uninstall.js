@@ -3,7 +3,7 @@ var fsExtra = require('fs-extra');
 
 var currentDir = process.cwd();
 
-var gitDir = currentDir + '/.git/hooks';
+var gitDir = currentDir + '../../.git/hooks';
 var preCommitHook = gitDir + '/pre-commit';
 var prePushHook = gitDir + '/pre-push';
 
@@ -13,7 +13,7 @@ function fileExists(filePath) {
 }
 
 gitFolder = fs.lstatSync(gitDir);
-if (! gitFolder.isDirectory()) {
+if (!gitFolder.isDirectory()) {
 	console.log('current directory is not git-versioned');
 	exit 0;
 }
