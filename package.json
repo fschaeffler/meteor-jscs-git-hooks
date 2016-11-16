@@ -1,7 +1,7 @@
 {
   "name": "meteor-jscs-git-hooks",
   "description": "Git hooks for checking code style and Meteor-based changes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "jscs": "latest",
     "fs-extra": "latest"
@@ -32,7 +32,7 @@
     "README.md"
   ],
   "scripts": {
-    "postinstall" : "node scripts/install.js",
-    "uninstall" : "node scripts/uninstall.js"
+    "postinstall": "node scripts/install.js",
+    "uninstall": "node scripts/uninstall.js"
   }
 }
