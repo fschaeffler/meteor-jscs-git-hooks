@@ -1,0 +1,3 @@
+#!/bin/bash
+
+meteor-jscs-git-hooks 'pre-push'

@@ -1,0 +1,38 @@
+{
+  "name": "meteor-jscs-git-hooks",
+  "description": "Git hooks for checking code style and Meteor-based changes",
+  "version": "0.0.1",
+  "dependencies": {
+    "jscs": "latest",
+    "fs-extra": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fschaeffler/meteor-jscs-git-hooks.git"
+  },
+  "keywords": [
+    "meteor",
+    "git",
+    "hook",
+    "productivity",
+    "code quality"
+  ],
+  "author": "Florian Schaeffler <git@schf.de>",
+  "bugs": {
+    "url": "https://github.com/fschaeffler/meteor-jscs-git-hooks/issues"
+  },
+  "homepage": "https://github.com/fschaeffler/meteor-jscs-git-hooks",
+  "bin": {
+    "meteor-jscs-git-hooks.sh": "./bin/meteor-jscs-git-hooks.sh"
+  },
+  "files": [
+    "bin",
+    "hooks",
+    "scripts",
+    "README.md"
+  ],
+  "scripts": {
+    "postinstall" : "scripts/install.js",
+    "uninstall" : "scripts/uninstall.js"
+  }
+}
