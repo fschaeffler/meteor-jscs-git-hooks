@@ -16,7 +16,7 @@ function fileExists(filePath) {
 gitFolder = fs.lstatSync(gitDir);
 if (!gitFolder.isDirectory()) {
 	console.log('current directory is not git-versioned');
-	exit 0;
+	process.exit(0);
 }
 
 if (fileExists(preCommitHook)) {
@@ -28,9 +28,9 @@ if (fileExists(prePushHook)) {
 }
 
 if (fileExists(preCommitHook + '.old')) {
-	fsExtra.copySync(path.resolve(__dirname, 'hooks/pre-commit.old'), preCommitHook);
+	fsExtra.copySync(path.resolve(__dirname, '../hooks/pre-commit.old'), preCommitHook);
 }
 
 if (fileExists(prePushHook + '.old')) {
-	fsExtra.copySync(path.resolve(__dirname, 'hooks/pre-push.old'), prePushHook);
+	fsExtra.copySync(path.resolve(__dirname, '../hooks/pre-push.old'), prePushHook);
 }
