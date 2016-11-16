@@ -1,5 +1,6 @@
 var fs = require('fs');
 var fsExtra = require('fs-extra');
+var path = require('path');
 
 var currentDir = process.cwd();
 
