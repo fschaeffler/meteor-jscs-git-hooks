@@ -6,4 +6,5 @@ if [[ -f $script_location/../../node_modules/meteor-jscs-git-hooks/bin/meteor-js
 	$script_location/../../node_modules/meteor-jscs-git-hooks/bin/meteor-jscs-git-hooks.sh 'pre-commit'
 else
 	echo "can't find node_modules/meteor-jscs-git-hooks/bin/meteor-jscs-git-hooks.sh"
+	echo "please re-install via `npm install meteor-jscs-git-hooks`"
 fi
