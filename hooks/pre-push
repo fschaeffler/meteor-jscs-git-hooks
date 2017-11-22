@@ -2,4 +2,8 @@
 
 script_location="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
-$script_location/../../node_modules/meteor-jscs-git-hooks/bin/meteor-jscs-git-hooks.sh 'pre-push'
+if [[ -f $script_location/../../node_modules/meteor-jscs-git-hooks/bin/meteor-jscs-git-hooks.sh ]]; then
+	$script_location/../../node_modules/meteor-jscs-git-hooks/bin/meteor-jscs-git-hooks.sh 'pre-push'
+else
+	echo "can't find node_modules/meteor-jscs-git-hooks/bin/meteor-jscs-git-hooks.sh"
+fi
