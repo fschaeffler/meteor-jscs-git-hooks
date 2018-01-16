@@ -1,38 +1,42 @@
 {
-  "name": "meteor-jscs-git-hooks",
-  "description": "Git hooks for checking code style and Meteor-based changes",
-  "version": "0.1.0",
-  "dependencies": {
-    "jscs": "latest",
-    "fs-extra": "latest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fschaeffler/meteor-jscs-git-hooks.git"
-  },
-  "keywords": [
-    "meteor",
-    "git",
-    "hook",
-    "productivity",
-    "code quality"
-  ],
-  "author": "Florian Schaeffler <git@schf.de>",
-  "bugs": {
-    "url": "https://github.com/fschaeffler/meteor-jscs-git-hooks/issues"
-  },
-  "homepage": "https://github.com/fschaeffler/meteor-jscs-git-hooks",
-  "bin": {
-    "meteor-jscs-git-hooks.sh": "./bin/meteor-jscs-git-hooks.sh"
-  },
-  "files": [
-    "bin",
-    "hooks",
-    "scripts",
-    "README.md"
-  ],
-  "scripts": {
-    "postinstall": "node scripts/install.js $(pwd)",
-    "uninstall": "node scripts/uninstall.js $(pwd)"
-  }
+	"name": "meteor-jscs-git-hooks",
+	"description": "Git hooks for checking code style and Meteor-based changes",
+	"version": "1.0.0",
+	"dependencies": {
+		"fs-extra": "^5.0.0",
+		"jscs": "^3.0.7"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fschaeffler/meteor-jscs-git-hooks.git"
+	},
+	"keywords": [
+		"meteor",
+		"git",
+		"hook",
+		"productivity",
+		"code quality"
+	],
+	"author": "Florian Schaeffler <git@schf.de>",
+	"bugs": {
+		"url": "https://github.com/fschaeffler/meteor-jscs-git-hooks/issues"
+	},
+	"homepage": "https://github.com/fschaeffler/meteor-jscs-git-hooks",
+	"bin": {
+		"meteor-jscs-git-hooks": "./bin/run.sh",
+		"meteor-jscs-git-hooks-activate": "./bin/activate.sh",
+		"meteor-jscs-git-hooks-deactivate": "./bin/deactivate.sh"
+	},
+	"files": [
+		"bin",
+		"hooks",
+		"hooks.js",
+		"README.md"
+	],
+	"scripts": {
+		"hooks": "node hooks.js"
+	},
+	"engines": {
+		"node": ">=8.0.0 <9.0.0"
+	}
 }
